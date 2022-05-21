@@ -11,6 +11,22 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
-  }
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.2",
+    "sequelize-cli": "^6.4.1"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m04j00/mw_refactoring.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m04j00/mw_refactoring/issues"
+  },
+  "homepage": "https://github.com/m04j00/mw_refactoring#readme",
+  "description": ""
 }
