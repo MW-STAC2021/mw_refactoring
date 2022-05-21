@@ -24,17 +24,23 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(60),
             allowNull: false,
             comment: '회원 비밀번호',
-        },
-        join_date: {
-            type: DataTypes.DATE,
-            allowNull: false,
-            defaultValue: Date.now,
-            comment: '회원 가입 날짜',
         }
     }, {
         charset: 'utf8',
         collate: "utf8_general_ci",
         tableName: 'User'
+    });
+
+    User.getUser = userId => User.findOne({
+        attributes: [
+            'id',
+            'name',
+            'email',
+        ],
+        where: {
+            id: userId,
+        },
+        raw: true
     });
 
     return User;
