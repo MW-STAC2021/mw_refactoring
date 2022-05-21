@@ -85,8 +85,12 @@ exports.login = async (req, res) => {
 exports.getUser = async (req, res) => {
     try {
         const data = await models.User.getUser(req.params.id);
-
-        res.status(200).json({
+        if(!data){
+            return res.status(404).json({
+                message: '계정이 존재하지 않습니다.'
+            });
+        }
+        return res.status(200).json({
             data
         })
     } catch (err) {
