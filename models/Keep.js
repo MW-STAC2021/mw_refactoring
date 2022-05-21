@@ -7,12 +7,6 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             comment: '즐겨찾기 고유 ID',
         },
-        create_date: {
-            type: DataTypes.DATE,
-            allowNull: false,
-            defaultValue: Date.now,
-            comment: '즐겨찾기 추가 시간'
-        }
     }, {
         charset: 'utf8',
         collate: "utf8_general_ci",
@@ -25,8 +19,8 @@ module.exports = (sequelize, DataTypes) => {
             sourceKey: 'id'
         });
 
-        models.Keep.belongsTo(models.Information, {
-            foreignKey: 'info_id',
+        models.Keep.belongsTo(models.Post, {
+            foreignKey: 'post_id',
             sourceKey: 'id'
         });
     };

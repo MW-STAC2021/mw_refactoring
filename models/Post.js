@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Information = sequelize.define("Information", {
+    const Post = sequelize.define("Post", {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -27,12 +27,6 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             comment: '정보 대표 이미지 경로',
         },
-        posting_date: {
-            type: DataTypes.DATE,
-            allowNull: false,
-            defaultValue: Date.now,
-            comment: '정보 생성 시간',
-        },
         content_path: {
             type: DataTypes.STRING(9),
             allowNull: false,
@@ -45,8 +39,8 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         charset: 'utf8',
         collate: "utf8_general_ci",
-        tableName: 'Information'
+        tableName: 'Post'
     });
-
-    return Information;
+    
+    return Post;
 };

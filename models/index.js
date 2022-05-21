@@ -10,7 +10,7 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 db.User = require('./User')(sequelize, Sequelize);
-db.Information = require('./Information')(sequelize, Sequelize);
+db.Post = require('./Post')(sequelize, Sequelize);
 db.Keep = require('./Keep')(sequelize, Sequelize);
 
 Object.keys(db).forEach((modelName) => {
