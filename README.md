@@ -16,4 +16,5 @@
 - 유관 기관 전화번호 제공
     - 유관 기관 정보를 제공함으로써 상황에 맞게 신고나 상담을 받을 수 있도록 도와줍니다.
 ### 🔗 Link
-[Notion](https://min-j.notion.site/5a65d3f9956e40b383c4878f16a01a1b)
+- [Notion](https://min-j.notion.site/5a65d3f9956e40b383c4878f16a01a1b)
+- [Google Play](https://play.google.com/store/apps/details?id=com.stac2021.mwproject)
